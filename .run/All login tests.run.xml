@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="All login tests" type="tests" factoryName="Autodetect">
-    <module name="git-assignment-16thMar" />
+    <module name="python_assignment_19thMarch" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
-    <option name="SDK_HOME" value="D:\New_folder\git-assignment-16thMar\venv\Scripts\python.exe" />
-    <option name="SDK_NAME" value="Python 3.11 (git-assignment-16thMar) (2)" />
+    <option name="SDK_HOME" value="D:\python_assignment_19thMarch\venv\Scripts\python.exe" />
+    <option name="SDK_NAME" value="Python 3.11 (python_assignment_19thMarch)" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />

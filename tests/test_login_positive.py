@@ -16,14 +16,11 @@ service = ChromeService(executable_path=ChromeDriverManager().install())
 
 @pytest.mark.login
 @pytest.mark.login_positive
-def test_valid_user_login():
+def test_valid_user_login(driver):
     """Test :A user with valid credentials should be able to Log in successfully
     URL :https://login-app-iota.vercel.app
     """
-    # Open the browser
-
-    driver = webdriver.Chrome(service=service)
-
+    # Act
     # Navigate to Site URL
     driver.get("https://login-app-iota.vercel.app")
 
@@ -63,6 +60,7 @@ def test_valid_user_login():
     logged_url = driver.current_url
     assert logged_url == "https://login-app-iota.vercel.app/about", "Default logged URL route should be about"
 
+    # Assert
     # Validate header title
     header_text = driver.find_element(By.TAG_NAME, "h1")
     login_text = header_text.text
@@ -81,5 +79,4 @@ def test_valid_user_login():
 
     time.sleep(3)
 
-    driver.quit()
 
